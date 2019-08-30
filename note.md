@@ -15,3 +15,7 @@ Using Spring Profiles
 Running your freshly minted Docker image with Spring profiles is as easy as passing an environment variable to the Docker run command
 
 $ docker run -e "SPRING_PROFILES_ACTIVE=prod" -p 8080:8080 -t springio/gs-spring-boot-docker
+
+Run multiple projectrs /modules
+https://spring.io/guides/gs/multi-module/
+https://docs.gradle.org/current/userguide/gradle_wrapper.html
