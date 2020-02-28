@@ -6,15 +6,20 @@
 ## Todo:
 * Update this notes with the lastest changes
 
-## To execute with gradle the project
+## to build java
 * ./gradlew build 
+
+## To execute with gradle the project
 * java -jar build/libs/gs-spring-boot-docker-0.1.0.jar
 
 ## installing with mbnw and build
 ./mvnw install dockerfile:build
 
+## building docker image
+* ./gradlew docker
+
 ## Running it up
-docker run -p 8080:8080 -t springio/gs-spring-boot-docker
+docker run -it -d -p 8080:8080 -t fhillip/gs-spring-boot-docker
 
 ## Using Spring Profiles
 Running your freshly minted Docker image with Spring profiles is as easy as passing an environment variable to the Docker run command

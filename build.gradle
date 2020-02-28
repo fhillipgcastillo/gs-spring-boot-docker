@@ -33,6 +33,7 @@ task unpack(type: Copy) {
 
 
 docker {
+    // docker image name fhillip/gs-spring-boot-docker:latest
     name "${project.group}/${bootJar.baseName}"
     copySpec.from(tasks.unpack.outputs).into("dependency")
     buildArgs(['DEPENDENCY': "dependency"])
